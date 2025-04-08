@@ -1,2 +1,2 @@
-# Finance
-StudyMyself
+# StudyMyself
+Finance
