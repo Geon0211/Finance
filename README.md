@@ -1,2 +1,3 @@
 # StudyMyself
-Finance
+
+Coding Financial Data
