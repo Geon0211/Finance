@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from fredapi import Fred
 
-fred = Fred(api_key = "12c323c0527099c4da382e8f51000276")
+fred = Fred(api_key = "Your Key")
 
 # # Get Bond data
 # def data_bond():
