@@ -13,12 +13,12 @@ period = 1
 
 def pv(face, coupon, interest, time, period):
     current = 0
-    for t in range(1,(period*time)+1):
-        if t != 3:
-            x = (face*coupon) / (1+interest/period)**(t)
+    for t in range(1,(time*period)+1):
+        if t != time*period:
+            x = (face*coupon/period) / (1+interest/period)**(t)
             current = current + x
         else:
-            x = (face*coupon + face) / (1+interest/period)**(t)
+            x = (face*coupon/period + face) / (1+interest/period)**(t)
             current = current + x
     return current
 print("Current Price is ${:.2f}".format(pv(face, coupon, interest, time, period)))
